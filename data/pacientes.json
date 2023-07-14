@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "nombre": "ni\u00f1a",
+            "tipo": "gato",
+            "raza": "siames",
+            "edad": 3,
+            "propietario": "farit"
+        },
+        {
+            "id": 2,
+            "nombre": "aaaa",
+            "tipo": "perro",
+            "raza": "pitbull",
+            "edad": 4,
+            "propietario": "rrrr"
+        },
+        {
+            "id": 3,
+            "nombre": "snop ",
+            "tipo": "ave",
+            "raza": "loros",
+            "edad": 1,
+            "propietario": "carlos"
+        }
+    ]
+}

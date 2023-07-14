@@ -1,4 +1,6 @@
 import os 
+import paciente
+import veterinario
 
 if __name__ == "__main__":
     isActivate = True
@@ -15,9 +17,11 @@ if __name__ == "__main__":
         op = int(input("Ingrese una opcion: "))
 
         if op == 1:
-            pass
+            paciente.loadInfoPacient()
+            paciente.mainMenu()
         elif op == 2:
-            pass
+            veterinario.loadInfoVeterinario()
+            veterinario.mainMenu()
         elif op == 3:
             pass
         elif op == 4:
