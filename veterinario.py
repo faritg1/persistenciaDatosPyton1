@@ -43,8 +43,8 @@ def mainMenu():
 
         data = {
             "id": input("Ingrese el id del veterinario: "),
-            "nombre": input("Ingrese el nombre del veterinario: "),
-            "especialidad": input("Ingrese el titulo profesional del veterinario: "),
+            "nombre": input("Ingrese el nombre del veterinario: ").lower(),
+            "especialidad": input("Ingrese la especialidad del veterinario: ").lower(),
             "fecha": str(datetime.now())
         }
 
@@ -61,9 +61,25 @@ def mainMenu():
         opcion = int(input(": "))
 
         if opcion == 1:
-            pass
+            veteSearch = input("Ingrese el nombre del veterinario: ").lower()
+            for i, item in enumerate(diccVeterinario["data"]):
+                if veteSearch == item["nombre"]:
+                    print(f'ID: {item["id"]}')
+                    print(f'Nombre: {item["nombre"]}')
+                    print(f'Especialidad: {item["especialidad"]}')
+                    print(f'Fecha de registro: {item["fecha"]}')
+                    print(f'_______________________________')
+                    input("")
         elif opcion == 2:
-            pass
+            veteSearch = input("Ingrese la especialidad del veterinario: ").lower()
+            for i, item in enumerate(diccVeterinario["data"]):
+                if veteSearch == item["especialidad"]:
+                    print(f'ID: {item["id"]}')
+                    print(f'Nombre: {item["nombre"]}')
+                    print(f'Especialidad: {item["especialidad"]}')
+                    print(f'Fecha de registro: {item["fecha"]}')
+                    print(f'_______________________________')
+                    input("")
         elif opcion == 3:
             print("Opcion no valida")
     elif op == 3:
