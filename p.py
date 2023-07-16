@@ -1,22 +1,18 @@
-# especiesAnimales = [
-#     {
-#         "perro":["pitbull","pincher","bulldog","pastor aleman","rottweiler"]
-#     },
-#     {
-#         "gato":["Persa","Azul ruso","siames","Angora turco","bengali"],
-#     },
-#     {
-#         "reptil":["camaleon","caiman","tortuga","iguana","lagarto"],
-#     },
-#     {
-#         "ave":["gallinas","pavos","gansos","palomas","loros"]
-#     }
-# ]
+horarioDiurno = {
+    "lunes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
+    "martes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
+    "miercoles":[6,7,8,9,10,11,12,13,14,15,16,17,18],
+    "jueves":[6,7,8,9,10,11,12,13,14,15,16,17,18],
+    "viernes":[6,7,8,9,10,11,12,13,14,15,16,17,18]
+}
 
-# for i, item in keys(especiesAnimales):
-#     print(i)
-#     print(item)
-
+horarioNocturno = {
+    "lunes":[12,13,14,15,16,17,18,19,20,21,22,23,24],
+    "martes":[12,13,14,15,16,17,18,19,20,21,22,23,24],
+    "miercoles":[12,13,14,15,16,17,18,19,20,21,22,23,24],
+    "jueves":[12,13,14,15,16,17,18,19,20,21,22,23,24],
+    "viernes":[12,13,14,15,16,17,18,19,20,21,22,23,24]
+}
 
 especiesAnimales = {
     "perro":["pitbull","pincher","bulldog","pastor aleman","rottweiler"],
