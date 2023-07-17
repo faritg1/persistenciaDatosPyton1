@@ -45,7 +45,7 @@ def mainMenu():
         nombre = input("Ingrese el nombre del veterinario: ").lower()
         especialidad = input("Ingrese la especialidad del veterinario: ").lower()
         fecha = str(datetime.now())
-        horario = input("¿Que horario fue asignado (diurno) o (nocturno)? ").lower()
+        """ horario = input("¿Que horario fue asignado (diurno) o (nocturno)? ").lower()
         if horario == "nocturno":
             tipoHorario = "horarioDiurno"
             horario = {
@@ -65,14 +65,14 @@ def mainMenu():
                 "viernes":[12,13,14,15,16,17,18,19,20,21,22,23,24]
             }
         else:
-            print("Ingrese una opción valida")
+            print("Ingrese una opción valida") """
 
         data = {
             "id": id,
             "nombre": nombre,
             "especialidad": especialidad,
             "fecha": fecha,
-            tipoHorario: horario #ARREGLAR!!!!
+            "hora": [] 
         }
 
         diccVeterinario["data"].append(data)
@@ -115,9 +115,11 @@ def mainMenu():
         print("|{:^16}{}{:^15}|".format(' ','BUSCADOR DE Veterinario',' '))
         print('+','-'*49,'+')
 
-        veteSearch = input("Ingrese el id del veterinario: ")
+        print(diccVeterinario["data"])
+        input("")
+        #veteSearch = input("Ingrese el id del veterinario: ")
 
-        for i, item in enumerate(diccVeterinario["data"]):
+        """ for i, item in enumerate(diccVeterinario["data"]):
             if veteSearch == item["id"]:
 
                 print(f'ID: {item["id"]}')
@@ -126,8 +128,7 @@ def mainMenu():
                 print(f'Fecha de registro: {item["fecha"]}')
                 print(f'Horario: {item["horarioDiurno"]}')
                 print(f'_______________________________')
-                input("")
-                    
+                input("") """
 
     elif op == 4:
         isPacientRun = False

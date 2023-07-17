@@ -23,6 +23,22 @@
             "raza": "loros",
             "edad": 1,
             "propietario": "carlos"
+        },
+        {
+            "id": 4,
+            "nombre": "eee",
+            "tipo": "perro",
+            "raza": "pitbull",
+            "edad": 3,
+            "propietario": "rrrrt"
+        },
+        {
+            "id": 5,
+            "nombre": "eew",
+            "tipo": "perro",
+            "raza": "pitbull",
+            "edad": 3,
+            "propietario": "e"
         }
     ]
 }

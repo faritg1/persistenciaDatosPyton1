@@ -1,4 +1,4 @@
-horarioDiurno = {
+""" horarioDiurno = {
     "lunes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
     "martes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
     "miercoles":[6,7,8,9,10,11,12,13,14,15,16,17,18],
@@ -31,23 +31,5 @@ if especie == 1:
     for i, item in enumerate(especiesAnimales['perro']):
         print(f'{i+1}. {item}')
     raza = especiesAnimales['perro'][int(input(": "))-1]
-    print(tipo,raza)
+    print(tipo,raza) """
     
-# elif especie == 2:
-#     print("GATO")
-#     for i,item in enumerate(especiesAnimales.values()):
-#         print(f'{i+1}. {item}')
-#     raza = int(input(": "))
-#     especieRaza = "gatos"
-# elif especie == 3:
-#     print("reptil")
-#     for i,item in enumerate(especiesAnimales.values()):
-#         print(f'{i+1}. {item}')
-#     raza = int(input(": "))
-#     especieRaza = "reptil"
-# elif especie == 4:
-#     print("ave")
-#     for i,item in enumerate(especiesAnimales.values()):
-#         print(f'{i+1}. {item}')
-#     raza = int(input(": "))
-#     especieRaza = "ave"
