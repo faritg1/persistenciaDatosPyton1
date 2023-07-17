@@ -17,7 +17,6 @@ if __name__ == "__main__":
             print("3. Gestion de citas medicas")
             print("4. Terminar programa")
             op = int(input("Ingrese una opcion: "))
-
             if op == 1:
                 paciente.loadInfoPacient()
                 paciente.mainMenu()

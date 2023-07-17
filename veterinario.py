@@ -45,38 +45,16 @@ def mainMenu():
         nombre = input("Ingrese el nombre del veterinario: ").lower()
         especialidad = input("Ingrese la especialidad del veterinario: ").lower()
         fecha = str(datetime.now())
-        """ horario = input("¿Que horario fue asignado (diurno) o (nocturno)? ").lower()
-        if horario == "nocturno":
-            tipoHorario = "horarioDiurno"
-            horario = {
-                "lunes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
-                "martes":[6,7,8,9,10,11,12,13,14,15,16,17,18],
-                "miercoles":[6,7,8,9,10,11,12,13,14,15,16,17,18],
-                "jueves":[6,7,8,9,10,11,12,13,14,15,16,17,18],
-                "viernes":[6,7,8,9,10,11,12,13,14,15,16,17,18]
-            }
-        elif horario == "diurno":
-            tipoHorario = "horarioNocturno"
-            horario = {
-                "lunes":[12,13,14,15,16,17,18,19,20,21,22,23,24],
-                "martes":[12,13,14,15,16,17,18,19,20,21,22,23,24],
-                "miercoles":[12,13,14,15,16,17,18,19,20,21,22,23,24],
-                "jueves":[12,13,14,15,16,17,18,19,20,21,22,23,24],
-                "viernes":[12,13,14,15,16,17,18,19,20,21,22,23,24]
-            }
-        else:
-            print("Ingrese una opción valida") """
-
         data = {
             "id": id,
             "nombre": nombre,
             "especialidad": especialidad,
             "fecha": fecha,
-            "hora": [] 
+            "agenda": [] 
         }
-
         diccVeterinario["data"].append(data)
         core.crearInfo("veterinarios.json",data)
+        
     elif op == 2:
         os.system("clear")
         print('+','-'*49,'+')

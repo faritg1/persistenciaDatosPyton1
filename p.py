@@ -32,4 +32,3 @@ if especie == 1:
         print(f'{i+1}. {item}')
     raza = especiesAnimales['perro'][int(input(": "))-1]
     print(tipo,raza) """
-    
